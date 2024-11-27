@@ -7,17 +7,21 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
+import AddBook from './components/AddBook.jsx';
+import UpdateBook from './components/UpdateBook.jsx';
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <app></app>,
+    element: <App></App>,
   },
   {
-    path: "addBook"
+    path: "addBook",
+    element: <AddBook></AddBook>,
   },
   {
-    path: "updateBook"
+    path: "updateBook",
+    element: <UpdateBook></UpdateBook>,
   },
 ]);
 
